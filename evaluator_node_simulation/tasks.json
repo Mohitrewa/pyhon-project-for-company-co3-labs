@@ -1,0 +1,23 @@
+[
+    {
+        "task_id": 1,
+        "inputs": [1.0, 2.0, 3.0],
+        "ground_truth": [1.0, 2.0, 3.0],
+        "metric": "MeanSquaredError",
+        "priority": 1
+    },
+    {
+        "task_id": 2,
+        "inputs": [1.5, 2.5, 3.5],
+        "ground_truth": [1.0, 2.0, 3.0],
+        "metric": "MeanSquaredError",
+        "priority": 2
+    },
+    {
+        "task_id": 3,
+        "inputs": [2.0, 3.0, 4.0],
+        "ground_truth": [1.0, 2.0, 3.0],
+        "metric": "MeanSquaredError",
+        "priority": 1
+    }
+]

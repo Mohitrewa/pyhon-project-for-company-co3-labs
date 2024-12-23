@@ -1,0 +1,42 @@
+INFO: Task 1 processed successfully. Result: 0.0
+INFO: Task 2 processed successfully. Result: 0.16666666666666666
+WARNING: Task 3 rejected due to queue size limit.
+WARNING: Task 1 rejected due to resource constraints: CPU=98%, Memory=89%.
+WARNING: Task 2 rejected due to resource constraints: CPU=83%, Memory=52%.
+WARNING: Task 2 rejected due to resource constraints: CPU=84%, Memory=87%.
+WARNING: Task 3 rejected due to resource constraints: CPU=95%, Memory=54%.
+INFO: Task 1 processed successfully. Result: 0.0
+WARNING: Task 2 rejected due to resource constraints: CPU=84%, Memory=57%.
+WARNING: Task 3 rejected due to resource constraints: CPU=92%, Memory=56%.
+INFO: Task 1 processed successfully. Result: 0.0
+WARNING: Task 1 rejected due to resource constraints: CPU=80%, Memory=93%.
+WARNING: Task 2 rejected due to resource constraints: CPU=90%, Memory=72%.
+WARNING: Task 3 rejected due to resource constraints: CPU=86%, Memory=100%.
+2024-12-23 18:24:25,078 [WARNING] Task 1 rejected due to resource constraints: CPU=93%, Memory=82%.
+2024-12-23 18:24:26,078 [INFO] Task 1 processed successfully. Result: 0.0
+2024-12-23 18:24:26,078 [WARNING] Task 2 rejected due to resource constraints: CPU=72%, Memory=82%.
+2024-12-23 18:24:27,080 [INFO] Task 2 processed successfully. Result: 0.25
+2024-12-23 18:24:27,080 [INFO] Task 3 processed successfully. Result: 1.0
+2024-12-23 18:24:46,939 [WARNING] Task 1 rejected due to resource constraints: CPU=98%, Memory=100%.
+2024-12-23 18:24:47,940 [INFO] Task 1 processed successfully. Result: 0.0
+2024-12-23 18:24:47,940 [WARNING] Task 2 rejected due to resource constraints: CPU=82%, Memory=51%.
+2024-12-23 18:24:48,941 [WARNING] Task 2 rejected due to resource constraints: CPU=80%, Memory=95%.
+2024-12-23 18:24:50,942 [INFO] Task 2 processed successfully. Result: 0.25
+2024-12-23 18:24:50,942 [WARNING] Task 3 rejected due to resource constraints: CPU=76%, Memory=98%.
+2024-12-23 18:24:51,943 [WARNING] Task 3 rejected due to resource constraints: CPU=86%, Memory=99%.
+2024-12-23 18:24:53,943 [WARNING] Task 3 rejected due to resource constraints: CPU=92%, Memory=56%.
+2024-12-23 18:24:57,945 [ERROR] Task 3 permanently failed after 3 retries.
+2024-12-23 18:25:23,947 [WARNING] Task 1 rejected due to resource constraints: CPU=78%, Memory=90%.
+2024-12-23 18:25:24,948 [INFO] Task 1 processed successfully. Result: 0.0
+2024-12-23 18:25:24,948 [WARNING] Task 2 rejected due to resource constraints: CPU=91%, Memory=76%.
+2024-12-23 18:25:25,949 [WARNING] Task 2 rejected due to resource constraints: CPU=79%, Memory=85%.
+2024-12-23 18:25:27,950 [WARNING] Task 2 rejected due to resource constraints: CPU=86%, Memory=91%.
+2024-12-23 18:25:31,950 [ERROR] Task 2 permanently failed after 3 retries.
+2024-12-23 18:25:31,950 [WARNING] Task 3 rejected due to resource constraints: CPU=59%, Memory=94%.
+2024-12-23 18:25:32,951 [INFO] Task 3 processed successfully. Result: 1.0
+2024-12-23 18:28:44,632 [WARNING] Task 1 rejected due to resource constraints: CPU=54%, Memory=92%.
+2024-12-23 18:28:45,633 [WARNING] Task 1 rejected due to resource constraints: CPU=75%, Memory=98%.
+2024-12-23 18:28:47,634 [INFO] Task 1 processed successfully. Result: 0.0
+2024-12-23 18:28:47,634 [INFO] Task 3 processed successfully. Result: 1.0
+2024-12-23 18:28:47,634 [WARNING] Task 2 rejected due to resource constraints: CPU=66%, Memory=97%.
+2024-12-23 18:28:48,635 [INFO] Task 2 processed successfully. Result: 0.25

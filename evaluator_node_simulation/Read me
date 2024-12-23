@@ -1,0 +1,94 @@
+Evaluator Node Simulation with Modular Metrics
+Overview
+This project simulates the functionality of an evaluator node for the Desights crowdsourced AI platform. The evaluator node processes tasks dynamically, evaluates solutions using modular metrics, and handles errors and resource constraints. The task evaluation is based on a FIFO queue, with support for custom evaluation metrics like Mean Squared Error (MSE). It also simulates real-world conditions like CPU and memory usage to ensure fairness in evaluation.
+
+Features
+Modular Evaluation System: Supports custom evaluation metrics like Mean Squared Error (MSE).
+Task Queue Management: Uses a FIFO queue to manage and process tasks.
+Resource Monitoring: Rejects tasks if resource constraints (queue size, CPU, or memory usage) exceed predefined limits.
+Error Handling: Logs errors and continues processing other tasks even if one fails.
+Logging: Logs detailed information about task processing, errors, and resource usage to a log file.
+Requirements
+To run the evaluator node simulation, you need the following Python packages:
+
+Python 3.x
+json (Standard Library)
+logging (Standard Library)
+random (Standard Library)
+You can run the script directly without additional dependencies.
+
+Files
+evaluator_node.py: The Python script that simulates the evaluator node.
+tasks.json: Sample input file containing a list of evaluation tasks.
+node.log: Log file capturing node activity during execution.
+Installation
+Clone the repository or download the files.
+Ensure you have Python 3.x installed on your machine.
+Place the tasks.json file in the same directory as the evaluator_node.py script.
+Usage
+To run the evaluator node simulation:
+
+Ensure that tasks.json contains a list of tasks with the format:
+json
+Copy code
+[
+    {
+        "task_id": 1,
+        "inputs": [1.0, 2.0, 3.0],
+        "ground_truth": [1.0, 2.0, 3.0],
+        "metric": "MeanSquaredError"
+    },
+    {
+        "task_id": 2,
+        "inputs": [1.5, 2.5, 3.5],
+        "ground_truth": [1.0, 2.0, 3.0],
+        "metric": "MeanSquaredError"
+    }
+]
+Run the Python script:
+bash
+Copy code
+python evaluator_node.py
+The script will process the tasks, evaluate them, and log all activity to node.log.
+
+Check the node.log file for detailed logs of task processing, errors, and resource usage.
+
+Resource Constraints
+The system will reject tasks if:
+
+The queue size exceeds 10 tasks.
+Simulated CPU usage exceeds 80%.
+Simulated memory usage exceeds 80%.
+Log Entries
+Sample log entries:
+
+INFO: Task 1 processed successfully. Result: 0.0
+ERROR: Task 2 failed. Reason: Division by zero in MeanSquaredError.
+WARNING: Task 3 rejected due to queue size limit.
+Implementation Details
+Modular Evaluation System
+The evaluation system is based on a base interface EvaluationMetric with a method evaluate that accepts inputs and ground truth values. The MeanSquaredError class implements this interface to calculate the Mean Squared Error (MSE).
+
+Task Queue
+A FIFO queue is used to manage tasks. The queue reads tasks from tasks.json and processes them one by one, ensuring tasks are handled in the order they are received.
+
+Error Handling
+Graceful error handling ensures that if a task fails (e.g., due to an exception in metric calculation), the system logs the error and continues processing other tasks.
+
+Resource Simulation
+The script simulates resource usage (CPU and memory) with random values. If the resource usage exceeds the thresholds, the task is rejected, and a warning is logged.
+
+Example Log File (node.log)
+arduino
+Copy code
+INFO: Task 1 processed successfully. Result: 0.0
+ERROR: Task 2 failed. Reason: Division by zero in MeanSquaredError.
+WARNING: Task 3 rejected due to queue size limit.
+INFO: Task 4 processed successfully. Result: 0.1
+Contribution
+If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+License
+This project is licensed under the MIT License.
+
+This README file provides an overview of the evaluator node simulation, its requirements, usage instructions, and details about its implementation.
